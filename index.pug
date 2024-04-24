@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../src/css/style.css")
+        link(rel="stylesheet", href="https://unpkg.com/boxicons@latest/css/boxicons.min.css")
+        title Krosovka 
+    body 
+        header.header
+            .header__inner.container
+                a.logoo(href="#")
+                    img.inner(src="../src/images/logo/logo.svg", alt="bu yerda rasm bor")
+                    img.inner(src="../src/images/logo/logo2.svg", alt="bu yerda rasm bor") 
+                nav.nav    
+                    ol.nav__list 
+                        li.nav__list__item 
+                            a.nav__link(href="#") Главная
+                        li.nav__list__item 
+                            a.nav__link(href="#") Магазин
+                        li.nav__list__item 
+                            a.nav__link(href="#") Заказазы
+                        li.nav__list__item 
+                            a.nav__link(href="#") О сервисе
+                        li.nav__list__item 
+                            a.nav__link(href="#") Помощы
+                .menu__bars 
+                    a.nav__bars(href="#")
+                        <i class='bx bx-menu'></i>              
+                                
+        main.main 
+            .main__container.container      
+                .main__text 
+                    h1 Нужны баскетбольные кроссовки?
+                    p Тут ты найдешь для себя лучшие кроссвоки для занятия баскетболом. У нас очень большой выбор!
+                    button ЗАКАЗАТЬ 
+
+                .main__picture 
+                    img(src="../src/images/kros.png", alt="bu yerda krosovkani rasmi bor")    
+        footer.footer 
+            .footer__container.container 
+                .footer__card__box 
+                    h1 Kyrie
+                    img(src="../src/images/brand1.png", alt="")
+                .footer__card__box 
+                    h1 Jordan
+                    img(src="../src/images/brand2.png", alt="")
+                .footer__card__box 
+                    h1 LeBron
+                    img(src="../src/images/brand3.png", alt="")
+                .footer__card__box 
+                    h1 Zoom Freak
+                    img(src="../src/images/brand4.png", alt="")            

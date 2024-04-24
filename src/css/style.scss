@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Quicksand&family=Roboto&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+// =======ASOSIY XUSUSIYATLAR START==========
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: blueviolet;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+// =======ASOSIY XUSUSIYATLAR END==========
+
+// =======HEADER  QISMI BOSHLANISHI==========
+header {
+  padding: 30px 0;
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logoo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .nav {
+      .nav__list {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+        .nav__list__item a {
+          letter-spacing: 1px;
+          line-height: 1.2px;
+          text-decoration: none;
+          font-size: 1.2rem;
+          color: #fff;
+        }
+      }
+    }
+    .menu__bars {
+      display: none;
+
+      .bx-menu {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+
+    
+  }
+}
+
+
+// =======HEADER  QISMI TUGASHI==========
+
+// =======MAIN  QISMI BOSHLANISHI==========
+
+.main {
+  padding: 50px 0;
+
+  .main__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main__text {
+      h1 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.5px;
+        margin-bottom: 15px;
+      }
+      p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.5px;
+        margin-bottom: 20px;
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        padding: 18px 28px;
+        background-color: #000;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        box-shadow: 0px 8px 30px 0px #060606;
+      }
+      button:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+// =======MAIN  QISMI TUGASHI==============
+
+// =======FOOTER  QISMI BOSHLANISHI==============
+.footer {
+  padding: 50px 0;
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+
+    .footer__card__box {
+      cursor: pointer;
+      color: #fff;
+      border-radius: 15px;
+      background: linear-gradient(
+      139.61deg,
+      #b38fb9 11.51%,
+      rgba(235, 224, 237, 0) 85.07%);
+      box-shadow: 0px 4px 4px 0px #000000;
+      text-align: center;
+      padding: 10px 15px;
+      transition: all .4s;
+    }
+    .footer__card__box:hover {
+      transform: scale(.95);
+    }
+  }
+}
+
+// =======FOOTER  QISMI  TUGASHI==================
+
+// =======MEDIA QISMI BOSHLANISHI==============
+
+@media (max-width: 1100px) {
+  .main__text h1 {
+    font-size: 3rem;
+    color: #000;
+  }
+  .main__text p {
+    font-size: 3rem;
+    color: #000;
+  }
+  .main__picture img {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header {
+    padding: 30px 0;
+
+  }
+    .main__container {
+      text-align: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .header .header__inner .nav{
+        display: none;
+
+    }
+    .header .header__inner .menu__bars {
+      display: block;
+
+    }
+    .main__picture img {
+      height: 12rem;
+    }
+}
